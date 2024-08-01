@@ -1,4 +1,4 @@
-# dbt-kube-demo
+# dbt-kube-integration
 A demo of how to use K8s CronJobs to automate DBT pipelines.
 
 You'll find here all you need to run a simple DBT project over Kubernetes with BiGQuery as a SQL backend.
