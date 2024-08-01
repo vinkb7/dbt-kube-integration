@@ -8,6 +8,6 @@ locals {
   ]
 }
 provider "google" {
-  project = "kube-dbt-demo"
-  region  = "europe-west1"
+  project = "river-psyche-430901-i1"
+  region  = "US-CENTRAL1"
 }

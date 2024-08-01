@@ -5,6 +5,6 @@ resource "google_project_service" "this" {
 }
 
 resource "google_storage_bucket" "this" {
-  name     = "terraform-kube-dbt-demo"
-  location = "europe-west1"
+  name     = "tform-kube-dbt-demo"
+  location = "US-CENTRAL1"
 }

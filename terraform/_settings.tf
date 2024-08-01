@@ -1,6 +1,6 @@
 terraform {
   backend "gcs" {
-    bucket = "terraform-kube-dbt-demo"
+    bucket = "tform-kube-dbt-demo"
     prefix = "state"
   }
 
@@ -13,8 +13,8 @@ terraform {
 }
 
 locals {
-  project = "kube-dbt-demo"
-  region  = "europe-west1"
+  project = "river-psyche-430901-i1"
+  region  = "us-central1"
 }
 
 provider "google" {

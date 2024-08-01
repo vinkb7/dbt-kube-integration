@@ -6,7 +6,7 @@ replicaCount: 1
 
 image:
   # To be chnage with your project ID
-  repository: "europe-west1-docker.pkg.dev/<project-id>/demo-repo/dbt-kube-demo"
+  repository: "us-central1-docker.pkg.dev/river-psyche-430901-i1/demo-repo/dbt-kube-demo"
   pullPolicy: Always
   # Overrides the image tag whose default is the chart appVersion.
   tag: "latest"
@@ -18,7 +18,7 @@ serviceAccount:
   annotations: {
       # Workload Identity binding between KSA and GSA
       # To be chnage with your project ID
-      iam.gke.io/gcp-service-account: dbt-sa@<project-id>.iam.gserviceaccount.com,
+      iam.gke.io/gcp-service-account: dbt-sa@river-psyche-430901-i1.iam.gserviceaccount.com,
     }
   # The name of the service account to use.
   # If not set and create is true, a name is generated using the fullname template

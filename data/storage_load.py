@@ -1,7 +1,7 @@
 from google.cloud import storage
 from pathlib import Path
 
-BUCKET_NAME = "terraform-kube-dbt-demo"
+BUCKET_NAME = "tform-kube-dbt-demo"
 
 ROOT_PATH = Path(__file__).parent
 FILES = [ROOT_PATH / "customers.ndjson", ROOT_PATH / "shops.ndjson"]

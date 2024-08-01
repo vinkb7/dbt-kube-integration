@@ -1,6 +1,6 @@
 resource "google_container_cluster" "this" {
   name     = "dbt-cluster"
-  location = "europe-west1"
+  location = "us-central1"
 
   network    = google_compute_network.this.name
   subnetwork = google_compute_subnetwork.this.id
@@ -8,14 +8,6 @@ resource "google_container_cluster" "this" {
   private_cluster_config {
     enable_private_endpoint = false
     enable_private_nodes    = true
-  }
-
-  maintenance_policy {
-    recurring_window {
-      start_time = "2022-11-20T00:00:00Z"
-      end_time   = "2050-01-01T04:00:00Z"
-      recurrence = "FREQ=WEEKLY"
-    }
   }
 
   # Enable Autopilot for this cluster

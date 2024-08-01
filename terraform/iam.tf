@@ -57,4 +57,5 @@ resource "google_service_account_iam_binding" "this" {
   members = [
     "serviceAccount:${local.project}.svc.id.goog[dbt/dbt-sa]"
   ]
+
 }

@@ -9,7 +9,7 @@ model-paths: ["models"]
 macro-paths: ["macros"]
 
 vars:
-  storage_uri: "gs://terraform-kube-dbt-demo/data/"
+  storage_uri: "gs://tform-kube-dbt-demo/data/"
 
 target-path: "target" # directory which will store compiled SQL files
 clean-targets: # directories to be removed by `dbt clean`
